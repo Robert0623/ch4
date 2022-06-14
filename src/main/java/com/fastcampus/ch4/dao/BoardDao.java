@@ -3,19 +3,33 @@ package com.fastcampus.ch4.dao;
 import com.fastcampus.ch4.domain.BoardDto;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BoardDao {
-    BoardDto select(int bno) throws Exception;
+    int count() throws Exception // T selectOne(String statement)
+    ;
 
-    List<BoardDto> selectAll() throws Exception;
+    int deleteAll() // int delete(String statement)
+    ;
 
-    int insert(BoardDto boardDto) throws Exception;
+    int delete(Integer bno, String writer) throws Exception // int delete(String statement, Object parameter)
+    ;
 
-    int update(BoardDto boardDto) throws Exception;
+    int insert(BoardDto dto) throws Exception // int insert(String statement, Object parameter)
+    ;
 
-    int delete(Integer bno, String writer) throws Exception;
+    List<BoardDto> selectAll() throws Exception // List<E> selectList(String statement)
+    ;
 
-    int deleteAll() throws Exception;
+    BoardDto select(Integer bno) throws Exception // T selectOne(String statement, Object parameter)
+    ;
 
-    int count() throws Exception;
+    List<BoardDto> selectPage(Map map) throws Exception // List<E> selectList(String statement, Object parameter)
+    ;
+
+    int update(BoardDto dto) throws Exception // int update(String statement, Object parameter)
+    ;
+
+    int increaseViewCnt(Integer bno) throws Exception // int update(String statement, Object parameter)
+    ;
 }
