@@ -14,3 +14,8 @@
 - ch4-5 ~ ch4-6
 - 게시판 읽기, 쓰기, 삭제, 수정기능 구현
 - BoardController, board.jsp, boardList.jsp
+
+## 06.16
+- ch4-7 ~ ch4-8
+- 게시판 검색기능 구현 
+- 검색 페이지 추가(페이지 소스 수정)
