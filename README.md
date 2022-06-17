@@ -19,3 +19,10 @@
 - ch4-7 ~ ch4-8
 - 게시판 검색기능 구현 
 - 검색 페이지 추가(페이지 소스 수정)
+
+## 06.17
+- ch4-9 ~ ch4-10
+- JSON, Ajax, Rest API
+- 댓글 기능 구현
+- CommnetDto, CommentDao, CommnetService
+- TDD
